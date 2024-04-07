@@ -210,10 +210,10 @@ body {
   background: rgb(115, 57, 56);
   background: linear-gradient(
     90deg,
-    rgba(115, 57, 56, 1) 0%,
+    rgba(120, 120, 120 1) 0%,
     rgba(158, 92, 66, 1) 2%,
     rgba(111, 59, 46, 1) 36%,
-    rgba(115, 57, 56, 1) 96%,
+    rgba(120, 120, 120, 1) 96%,
     rgba(74, 34, 33, 1) 100%
   );
   border-radius: 10px;
