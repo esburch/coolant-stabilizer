@@ -116,16 +116,16 @@ body {
   position: absolute;
   width: 60px;
   height: 100%;
-  background: rgb(247, 127, 0);
+  background: rgb(120, 120, 120);
   background: repeating-linear-gradient(
     0deg,
-    rgba(247, 127, 0, 1) 0px,
-    rgba(247, 127, 0, 1) 50px,
-    rgba(255, 166, 73, 1) 52px,
+    rgba(120, 120, 120, 1) 0px,
+    rgba(120, 120, 120, 1) 50px,
+    rgba(180, 180, 180, 1) 52px,
     rgba(119, 73, 54, 1) 56px,
     rgba(119, 73, 54, 1) 57px,
-    rgba(247, 127, 0, 1) 61px,
-    rgba(247, 127, 0, 1) 100px
+    rgba(120, 120, 120, 1) 61px,
+    rgba(120, 120, 120, 1) 100px
   );
   left: 30px;
   border-radius: 10px;
