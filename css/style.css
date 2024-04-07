@@ -161,8 +161,8 @@ body {
   background: rgb(142, 202, 230);
   background: linear-gradient(
     180deg,
-    rgba(142, 202, 230, 1) 0%,
-    rgba(33, 158, 188, 1) 100%
+    rgba(216, 212, 206, 1) 0%,
+    rgba(162, 159, 155, 1) 100%
   );
   box-shadow: inset -3px 3px rgba(0, 0, 0, 0.3);
   border: 2px solid #774936;
