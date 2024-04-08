@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  background-color:#212529;
 }
 .fishing {
   position: absolute;
@@ -34,27 +35,6 @@ body {
   );
   border: 1px solid #212529;
   border-radius: 5px;
-}
-.fishing .rod:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 8px;
-  height: 50px;
-  background: rgb(205, 152, 121);
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(247, 127, 0, 1) 0px,
-    rgba(247, 127, 0, 1) 2px,
-    rgba(158, 92, 66, 1) 4px,
-    rgba(247, 127, 0, 1) 6px,
-    rgba(247, 127, 0, 1) 9px
-  );
-  border: 2px solid #9e5c42;
-  bottom: -3px;
-  right: -3px;
-  border-radius: 5px;
-  box-shadow: -3px 4px 14px -4px, inset 2px -2px rgba(0, 0, 0, 0.2);
 }
 .fishing .rod .reel {
   position: absolute;
@@ -122,8 +102,8 @@ body {
     rgba(120, 120, 120, 1) 0px,
     rgba(120, 120, 120, 1) 50px,
     rgba(180, 180, 180, 1) 52px,
-    rgba(119, 73, 54, 1) 56px,
-    rgba(119, 73, 54, 1) 57px,
+    rgba(90, 90, 90, 1) 56px,
+    rgba(90, 90, 90, 1) 57px,
     rgba(120, 120, 120, 1) 61px,
     rgba(120, 120, 120, 1) 100px
   );
@@ -161,8 +141,8 @@ body {
   background: rgb(142, 202, 230);
   background: linear-gradient(
     180deg,
-    rgba(142, 202, 230, 1) 0%,
-    rgba(33, 158, 188, 1) 100%
+    rgba(216, 212, 206, 1) 0%,
+    rgba(162, 159, 155, 1) 100%
   );
   box-shadow: inset -3px 3px rgba(0, 0, 0, 0.3);
   border: 2px solid #774936;
@@ -178,8 +158,8 @@ body {
   font-size: 25px;
   line-height: 50px;
   text-align: center;
-  color: #264653;
-  text-shadow: 1px 1px #2a9d8f;
+  color: #D93806;
+  text-shadow: 1px 1px #F84007;
 }
 .fishing .sea .bait {
   position: absolute;
@@ -187,16 +167,16 @@ body {
   height: 100px;
   top: 0%;
   left: 0;
-  background: #beee62;
+  background: #FFC300;
   border-radius: 10px;
-  box-shadow: inset 0 0 1px 3px #70ae6e;
+  box-shadow: inset 0 0 1px 3px #DFAB00;
 }
 .fishing .progress {
   position: absolute;
   width: 30px;
   height: 100%;
-  border: 2px solid #9e5c42;
-  background: #e36414;
+  border: 2px solid #808080;
+  background: #B2BEB5;
   right: 0;
   top: 0;
   border-radius: 10px;
@@ -224,7 +204,7 @@ body {
   position: absolute;
   width: 100%;
   height: 2%;
-  background: #beee62;
+  background: #006EC7;
   bottom: 0;
   box-shadow: inset 2px -2px rgba(0, 0, 0, 0.4);
   border-radius: 0 0 10px 10px;
