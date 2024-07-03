@@ -53,3 +53,4 @@ jobs:
         with:
           BRANCH: main # The branch the action should deploy to.
           FOLDER: build/web # The folder the action should deploy.
+          TARGET-FOLDER: site
