@@ -4,11 +4,10 @@
 [ext_resource path="res://art/Untitled_Artwork-3.png" type="Texture" id=2]
 [ext_resource path="res://art/Untitled_Artwork-1.png" type="Texture" id=3]
 [ext_resource path="res://Coolant.tscn" type="PackedScene" id=4]
+[ext_resource path="res://art/600px-Godot_icon.svg.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
-
-[sub_resource type="RectangleShape2D" id=2]
 
 [node name="Control" type="Node2D"]
 script = ExtResource( 1 )
@@ -42,15 +41,7 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 36, 405 )
-scale = Vector2( 5, 5 )
-shape = SubResource( 2 )
+position = Vector2( 48, 408 )
+scale = Vector2( 0.1, 0.1 )
+normal = ExtResource( 5 )
 action = "Up"
-
-[node name="Label" type="Label" parent="CanvasLayer"]
-margin_left = 49.0
-margin_top = 456.0
-margin_right = 119.0
-margin_bottom = 470.0
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Press Here"
