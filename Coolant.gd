@@ -3,7 +3,7 @@ extends KinematicBody2D
 const VELOCITY: float = -15.0
 var velocity = Vector2.ZERO
 
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity") * 5
 var top_bounds
 var bot_bounds
 
@@ -18,4 +18,8 @@ func _physics_process(delta):
 	if collision:
 		velocity = velocity.bounce(collision.get_normal()) * 0.4
 
-	
+func _on_Area2D_area_entered(area: Area2D) -> void:
+	print(area.name, " entered")
+
+func _on_Area2D_area_exited(area: Area2D) -> void:
+	print(area.name, " exited")
