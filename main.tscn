@@ -62,3 +62,13 @@ monitoring = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bobber/Area2D"]
 position = Vector2( 0, 4 )
 shape = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = 87.0
+margin_top = 332.0
+margin_right = 142.0
+margin_bottom = 346.0
+rect_scale = Vector2( 5, 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "SUCCESS"

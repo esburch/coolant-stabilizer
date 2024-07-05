@@ -14,6 +14,13 @@ config/name="coolant-stabilizer"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=360
+window/size/height=800
+window/size/resizable=false
+window/size/borderless=true
+
 [global]
 
 etc=false
