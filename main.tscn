@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://art/Untitled_Artwork-3.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Coolant.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/600px-Godot_icon.svg.png" type="Texture" id=5]
 [ext_resource path="res://art/bobber.png" type="Texture" id=6]
+[ext_resource path="res://art/progress-fg.png" type="Texture" id=7]
+[ext_resource path="res://art/progress-bg.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
@@ -45,7 +47,7 @@ shape = SubResource( 1 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2( 48, 408 )
+position = Vector2( 30, 350 )
 scale = Vector2( 0.1, 0.1 )
 normal = ExtResource( 5 )
 action = "Up"
@@ -72,3 +74,15 @@ margin_bottom = 346.0
 rect_scale = Vector2( 5, 5 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "SUCCESS"
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 107.0
+margin_top = 255.0
+margin_right = 260.0
+margin_bottom = 1226.0
+rect_scale = Vector2( 0.25, 0.25 )
+max_value = 5.0
+step = 0.1
+texture_under = ExtResource( 8 )
+texture_progress = ExtResource( 7 )
+fill_mode = 3
