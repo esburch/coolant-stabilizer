@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://art/Untitled_Artwork-3.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://art/bobber.png" type="Texture" id=6]
 [ext_resource path="res://art/progress-fg.png" type="Texture" id=7]
 [ext_resource path="res://art/progress-bg.png" type="Texture" id=8]
+[ext_resource path="res://art/coolant_tank.png" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
@@ -33,6 +34,11 @@ position = Vector2( 257, 447 )
 [node name="CoolantPipe" type="Sprite" parent="."]
 position = Vector2( 258, 402 )
 texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 103, 604 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
