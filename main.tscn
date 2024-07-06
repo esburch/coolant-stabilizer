@@ -25,29 +25,31 @@ margin_bottom = 800.0
 color = Color( 0.917647, 0.917647, 0.92549, 1 )
 
 [node name="PipeBackground" type="Sprite" parent="."]
-position = Vector2( 256, 400 )
+position = Vector2( 256, 335 )
+scale = Vector2( 1, 1.1625 )
 texture = ExtResource( 3 )
 
 [node name="Coolant" parent="." instance=ExtResource( 4 )]
 position = Vector2( 257, 447 )
 
 [node name="CoolantPipe" type="Sprite" parent="."]
+visible = false
 position = Vector2( 258, 402 )
 texture = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 103, 604 )
-scale = Vector2( 0.5, 0.5 )
+[node name="CoolantPipeModel" type="Sprite" parent="."]
+position = Vector2( 252, 411 )
+scale = Vector2( 0.541016, 0.951172 )
 texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Top" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 248, 198 )
+position = Vector2( 257, 97 )
 shape = SubResource( 1 )
 
 [node name="Bottom" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 254, 563 )
+position = Vector2( 261, 695 )
 shape = SubResource( 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
