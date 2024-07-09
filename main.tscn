@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://art/Untitled_Artwork-3.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://art/progress-fg.png" type="Texture" id=7]
 [ext_resource path="res://art/progress-bg.png" type="Texture" id=8]
 [ext_resource path="res://art/coolant_tank.png" type="Texture" id=9]
+[ext_resource path="res://art/att.ijwD0b4tV3UzaWZsWsbwIrgitkxRLGoQwRrkFGzFjy8.jpg" type="Texture" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
@@ -19,10 +20,15 @@ radius = 85.5102
 [node name="Control" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 360.0
-margin_bottom = 800.0
-color = Color( 0.917647, 0.917647, 0.92549, 1 )
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -566.0
+margin_top = -42.0
+margin_right = 458.0
+margin_bottom = 982.0
+texture = ExtResource( 10 )
+stretch_mode = 5
 
 [node name="PipeBackground" type="Sprite" parent="."]
 position = Vector2( 256, 335 )
