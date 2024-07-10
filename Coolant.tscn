@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Coolant.gd" type="Script" id=1]
-[ext_resource path="res://art/Untitled_Artwork-2.png" type="Texture" id=2]
+[ext_resource path="res://art/IMG_0366.PNG" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 81, 22.5 )
@@ -10,18 +10,15 @@ extents = Vector2( 81, 22.5 )
 extents = Vector2( 80.5, 22 )
 
 [node name="Coolant" type="KinematicBody2D"]
-position = Vector2( 88, 84 )
+position = Vector2( 86, 359 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
 physics_interpolation_mode = 2
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -8, -93.5 )
+position = Vector2( -5, -300 )
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -30,7 +27,7 @@ collision_mask = 2
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -6.5, -93 )
+position = Vector2( -6, -294 )
 shape = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="."]

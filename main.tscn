@@ -1,15 +1,14 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://art/Untitled_Artwork-3.png" type="Texture" id=2]
-[ext_resource path="res://art/Untitled_Artwork-1.png" type="Texture" id=3]
+[ext_resource path="res://art/IMG_0367.PNG" type="Texture" id=3]
 [ext_resource path="res://Coolant.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/600px-Godot_icon.svg.png" type="Texture" id=5]
 [ext_resource path="res://art/bobber.png" type="Texture" id=6]
 [ext_resource path="res://art/progress-fg.png" type="Texture" id=7]
 [ext_resource path="res://art/progress-bg.png" type="Texture" id=8]
-[ext_resource path="res://art/coolant_tank.png" type="Texture" id=9]
-[ext_resource path="res://art/att.ijwD0b4tV3UzaWZsWsbwIrgitkxRLGoQwRrkFGzFjy8.jpg" type="Texture" id=10]
+[ext_resource path="res://art/IMG_0365.PNG" type="Texture" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
@@ -27,16 +26,14 @@ margin_left = -566.0
 margin_top = -42.0
 margin_right = 458.0
 margin_bottom = 982.0
-texture = ExtResource( 10 )
+texture = ExtResource( 3 )
 stretch_mode = 5
 
-[node name="PipeBackground" type="Sprite" parent="."]
-position = Vector2( 256, 335 )
-scale = Vector2( 1, 1.1625 )
-texture = ExtResource( 3 )
-
 [node name="Coolant" parent="." instance=ExtResource( 4 )]
-position = Vector2( 257, 447 )
+position = Vector2( 243, 679 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CoolantPipe" type="Sprite" parent="."]
 visible = false
@@ -44,8 +41,8 @@ position = Vector2( 258, 402 )
 texture = ExtResource( 2 )
 
 [node name="CoolantPipeModel" type="Sprite" parent="."]
-position = Vector2( 252, 411 )
-scale = Vector2( 0.541016, 0.951172 )
+position = Vector2( -55, 465.5 )
+scale = Vector2( 0.994141, 0.995117 )
 texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
