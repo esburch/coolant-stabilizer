@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Untitled_Artwork-2.png-9201e6ca22c228c0ccc2a75813e21aec.stex"
+path="res://.import/Bobber-Rect.png-19ab8ebe9b5b45d20ad2613e0e3be72d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Untitled_Artwork-2.png"
-dest_files=[ "res://.import/Untitled_Artwork-2.png-9201e6ca22c228c0ccc2a75813e21aec.stex" ]
+source_file="res://art/Bobber-Rect.png"
+dest_files=[ "res://.import/Bobber-Rect.png-19ab8ebe9b5b45d20ad2613e0e3be72d.stex" ]
 
 [params]
 
