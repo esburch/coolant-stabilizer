@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const VELOCITY: float = -15.0
+const VELOCITY: float = -18.0
 var velocity = Vector2.ZERO
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity") * 5

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IMG_0366.PNG-f1f9e6510db91507064a53d3e618ea4c.stex"
+path="res://.import/Overlay.png-d5abd9da095cfdec5c8dd16cb5c0729d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/IMG_0366.PNG"
-dest_files=[ "res://.import/IMG_0366.PNG-f1f9e6510db91507064a53d3e618ea4c.stex" ]
+source_file="res://art/Overlay.png"
+dest_files=[ "res://.import/Overlay.png-d5abd9da095cfdec5c8dd16cb5c0729d.stex" ]
 
 [params]
 
