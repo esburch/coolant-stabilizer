@@ -17,4 +17,4 @@ func _process(delta):
 	if timer.time_left == 0:
 		pb.value = 0
 	else:
-		pb.value = 5-timer.time_left
+		pb.value = 2-timer.time_left
