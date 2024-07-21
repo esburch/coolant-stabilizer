@@ -4,7 +4,7 @@
 [ext_resource path="res://AurebeshEnglishRegular-rjeO.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 20
+size = 40
 font_data = ExtResource( 2 )
 
 [node name="Control" type="Control"]
@@ -22,7 +22,6 @@ margin_left = 50.0
 margin_top = 338.0
 margin_right = 185.0
 margin_bottom = 357.0
-rect_scale = Vector2( 2, 2 )
 custom_colors/font_color = Color( 0.647059, 0.666667, 0.67451, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Success"
