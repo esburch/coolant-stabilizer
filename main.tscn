@@ -5,13 +5,15 @@
 [ext_resource path="res://art/Button.png" type="Texture" id=3]
 [ext_resource path="res://Coolant.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/Progress.png" type="Texture" id=5]
-[ext_resource path="res://art/Bobber-Rect.png" type="Texture" id=6]
+[ext_resource path="res://Bobber.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 136, 70 )
+[sub_resource type="Curve2D" id=5]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 272, 64, 0, 0, 0, 0, 272, 656, 0, 0, 0, 0, 272, 248 )
+}
 
 [sub_resource type="Shader" id=3]
 code = "/*
@@ -219,6 +221,7 @@ shader_param/pixel_strength = -2.496
 
 [node name="Control" type="Node2D"]
 script = ExtResource( 1 )
+Bobber = ExtResource( 6 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 360.0
@@ -255,25 +258,25 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="Top" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 288, 34 )
+position = Vector2( 276, 34 )
 shape = SubResource( 1 )
 
 [node name="Bottom" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 280, 769 )
 shape = SubResource( 1 )
 
-[node name="Bobber" type="Sprite" parent="."]
-position = Vector2( 276, 144 )
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+[node name="BobberPath" type="Path2D" parent="."]
+curve = SubResource( 5 )
 
-[node name="Area2D" type="Area2D" parent="Bobber"]
-collision_layer = 2
-monitoring = false
+[node name="BobberFollowPath" type="PathFollow2D" parent="BobberPath"]
+position = Vector2( 272, 92 )
+rotation = 1.5708
+rotate = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bobber/Area2D"]
-position = Vector2( -4, 2 )
-shape = SubResource( 2 )
+[node name="Node2D" parent="BobberPath/BobberFollowPath" instance=ExtResource( 6 )]
+position = Vector2( 146.41, -305.563 )
+rotation = 1.5708
+scale = Vector2( 1.1, 1 )
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
 position = Vector2( 41, 358 )
