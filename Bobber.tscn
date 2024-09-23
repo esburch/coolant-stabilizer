@@ -13,11 +13,9 @@ scale = Vector2( 0.496212, 0.5 )
 texture = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="Bobber"]
-visible = false
 collision_layer = 2
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bobber/Area2D"]
-visible = false
 position = Vector2( -4, 2 )
 shape = SubResource( 1 )
