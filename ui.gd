@@ -26,3 +26,7 @@ func _process(delta):
 		pb.value = 0
 	else:
 		pb.value = 2-timer.time_left
+
+
+func _on_Button_pressed():
+	$TutorialOverlay.visible = false
