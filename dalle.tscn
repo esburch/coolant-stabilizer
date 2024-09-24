@@ -339,9 +339,9 @@ uppercase = true
 
 [node name="Actions" type="Label" parent="TutorialOverlay"]
 margin_left = 24.0
-margin_top = 424.0
+margin_top = 392.0
 margin_right = 304.0
-margin_bottom = 537.0
+margin_bottom = 505.0
 custom_fonts/font = SubResource( 6 )
 text = "Use these actions to get the coolant in to the red square to stabilize it"
 autowrap = true
@@ -349,9 +349,9 @@ uppercase = true
 
 [node name="Hold" type="Label" parent="TutorialOverlay"]
 margin_left = 24.0
-margin_top = 560.0
+margin_top = 544.0
 margin_right = 304.0
-margin_bottom = 673.0
+margin_bottom = 657.0
 custom_fonts/font = SubResource( 6 )
 text = "Hold the stabilized coolant in the red square until the progress bar is filled to succeed"
 autowrap = true
