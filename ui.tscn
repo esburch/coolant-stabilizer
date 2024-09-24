@@ -6,7 +6,7 @@
 [ext_resource path="res://Coolant.tscn" type="PackedScene" id=4]
 [ext_resource path="res://art/Progress.png" type="Texture" id=5]
 [ext_resource path="res://Bobber.tscn" type="PackedScene" id=6]
-[ext_resource path="res://AurebeshEnglishRegular-rjeO.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://conthrax-sb.otf" type="DynamicFontData" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 102.5, 10 )
@@ -354,6 +354,6 @@ margin_top = 16.0
 margin_right = 352.0
 margin_bottom = 68.0
 custom_fonts/font = SubResource( 7 )
-text = "close tutorial"
+text = "CLOSE TUTORIAL"
 
 [connection signal="pressed" from="TutorialOverlay/Button" to="." method="_on_Button_pressed"]
